@@ -1,3 +1,3 @@
-# trading-chart-demo
+# trading-chart
 
 Project readme goes here.

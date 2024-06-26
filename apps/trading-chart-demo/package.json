@@ -1,7 +1,7 @@
 {
-  "name": "@gmjs/trading-chart-demo",
+  "name": "@gmjs/trading-chart",
   "version": "0.0.1",
-  "description": "trading-chart-demo",
+  "description": "trading-chart",
   "private": true,
   "author": {
     "name": "Goran Mržljak",
@@ -12,25 +12,43 @@
   "keywords": [],
   "repository": {
     "type": "git",
-    "url": "https://github.com/mrzli/trading-chart-demo"
+    "url": "https://github.com/mrzli/trading-chart"
   },
   "type": "module",
+  "main": "src/index.js",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
-    "lint": "eslint --fix . && prettier --write .",
-    "test": "vitest run --passWithNoTests",
-    "testw": "vitest watch --passWithNoTests",
     "preview": "vite preview",
+    "lint": "eslint --fix . && prettier --write .",
+    "test-only": "vitest run --passWithNoTests",
+    "test": "pnpm run lint && pnpm run test-only",
+    "testw": "vitest watch --passWithNoTests",
+    "clean": "shx rm -rf ./dist",
+    "build-only": "pnpm run clean && tsc --project tsconfig.build.json",
+    "build": "pnpm run test && pnpm run build-only",
+    "pac-only": "npmpub pack",
+    "pac": "pnpm run build && pnpm run pac-only",
+    "pub-only": "npmpub pub",
+    "pub": "pnpm run pac && pnpm run pub-only",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
   "dependencies": {
-    "@gmjs/example-lib": "workspace:^"
+    "@gmjs/apply-function": "^0.0.3",
+    "@gmjs/array-create": "^0.0.1",
+    "@gmjs/array-transformers": "^0.0.3",
+    "@gmjs/assert": "^0.0.6",
+    "@gmjs/binary-search": "^0.0.1",
+    "@gmjs/data-container-util": "^0.0.1",
+    "@gmjs/date-util": "^0.0.9",
+    "@gmjs/number-util": "^0.0.3",
+    "@gmjs/value-transformers": "^0.0.15",
+    "luxon": "^3.4.4"
   },
   "devDependencies": {
     "@chromatic-com/storybook": "^1.5.0",
-    "@gmjs/eslint-config": "^0.0.37",
+    "@gmjs/eslint-config": "^0.0.36",
+    "@gmjs/npm-publish-cli": "^0.0.9",
     "@storybook/addon-essentials": "^8.1.10",
     "@storybook/addon-interactions": "^8.1.10",
     "@storybook/addon-links": "^8.1.10",
@@ -39,11 +57,13 @@
     "@storybook/html-vite": "^8.1.10",
     "@storybook/test": "^8.1.10",
     "@storybook/types": "^8.1.10",
-    "@types/node": "^20.14.9",
+    "@types/luxon": "^3.4.2",
+    "@types/node": "^20.14.7",
     "autoprefixer": "^10.4.19",
     "eslint": "^9.5.0",
     "postcss": "^8.4.38",
     "prettier": "^3.3.2",
+    "shx": "^0.3.4",
     "storybook": "^8.1.10",
     "tailwindcss": "^3.4.4",
     "ts-node": "^10.9.2",
@@ -53,5 +73,6 @@
   },
   "engines": {
     "node": ">=20.10.0"
-  }
+  },
+  "packageManager": "pnpm@9.1.4+sha512.9df9cf27c91715646c7d675d1c9c8e41f6fce88246f1318c1aa6a1ed1aeb3c4f032fcdf4ba63cc69c4fe6d634279176b5358727d8f2cc1e65b65f43ce2f8bfb0"
 }

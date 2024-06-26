@@ -1,6 +1,6 @@
 # Change Log
 
-All notable changes to the "trading-chart-demo" will be documented in this file.
+All notable changes to the "trading-chart" will be documented in this file.
 
 ## [Unreleased]
 
