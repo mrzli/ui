@@ -1,6 +1,6 @@
 {
   "extends": ["./tsconfig.json"],
-  "exclude": ["src/**/*.test.ts", "src/**/*.stories.ts", "src/_non-build"],
+  "exclude": ["src/**/*.test.ts", "src/**/*.stories.ts"],
   "compilerOptions": {
     "rootDir": ".",
     "outDir": "dist",
