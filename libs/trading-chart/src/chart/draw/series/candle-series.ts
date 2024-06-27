@@ -1,5 +1,5 @@
 import { CandleParameters, drawCandle } from '../chart-primitives';
-import { Rect } from '../../types';
+import { Rect } from '@gmjs/trading-chart-shared';
 
 export interface CandleSeriesData {
   readonly itemWidth: number;

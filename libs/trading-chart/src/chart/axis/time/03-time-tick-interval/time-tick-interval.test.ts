@@ -1,5 +1,5 @@
 import { describe, it, expect } from '@jest/globals';
-import { Interval } from '../../../types';
+import { Interval } from '@gmjs/trading-chart-shared';
 import { getMinTimeTickInterval } from './time-tick-interval';
 import { TimeAxisInput } from '../types';
 

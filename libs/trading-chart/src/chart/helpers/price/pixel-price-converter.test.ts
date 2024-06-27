@@ -1,5 +1,5 @@
 import { describe, it, expect } from '@jest/globals';
-import { Range } from '../../types';
+import { Range } from '@gmjs/trading-chart-shared';
 import { pixelToPrice, priceToPixel } from './pixel-price-converter';
 
 describe('pixel-price-converter', () => {

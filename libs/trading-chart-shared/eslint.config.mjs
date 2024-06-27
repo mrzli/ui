@@ -5,5 +5,5 @@ export default [
   {
     ignores: ['dist/', 'eslint.config.mjs', 'jest.config.ts'],
   },
-  ...getEsLintConfigs({ projectType: 'browser' }),
+  ...getEsLintConfigs({ projectType: 'shared' }),
 ];

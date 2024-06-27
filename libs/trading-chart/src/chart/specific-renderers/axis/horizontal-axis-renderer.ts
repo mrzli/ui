@@ -1,7 +1,7 @@
 import { TimeAxisOutputItem } from '../../axis';
 import { CanvasRenderer, createCanvasRenderer } from '../../canvas-renderer';
 import { TextParameters, drawText } from '../../draw';
-import { Rect } from '../../types';
+import { Rect } from '@gmjs/trading-chart-shared';
 
 export function createHorizontalAxisRenderer(
   area: Rect,

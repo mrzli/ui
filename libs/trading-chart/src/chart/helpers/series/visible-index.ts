@@ -1,5 +1,5 @@
 import { clamp } from '@gmjs/number-util';
-import { SeriesPosition } from '../../types';
+import { SeriesPosition } from '@gmjs/trading-chart-shared';
 
 export function getFirstVisibleIndex(
   position: SeriesPosition,

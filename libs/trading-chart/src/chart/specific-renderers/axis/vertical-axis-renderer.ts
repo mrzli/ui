@@ -1,7 +1,7 @@
 import { PriceAxisOutputItem } from '../../axis/price/types/price-axis-output-item';
 import { CanvasRenderer, createCanvasRenderer } from '../../canvas-renderer';
 import { TextParameters, drawText } from '../../draw';
-import { Rect } from '../../types';
+import { Rect } from '@gmjs/trading-chart-shared';
 
 export function createVerticalAxisRenderer(
   area: Rect,

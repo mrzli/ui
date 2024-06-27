@@ -1,4 +1,4 @@
-import { SeriesPosition } from '../../types';
+import { SeriesPosition } from '@gmjs/trading-chart-shared';
 
 export function multiplySeriesPosition(
   position: SeriesPosition,

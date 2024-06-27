@@ -1,5 +1,5 @@
 import { ChartAreas } from '../../../helpers';
-import { Range, SeriesPosition, Size } from '../../../types';
+import { Range, SeriesPosition, Size } from '@gmjs/trading-chart-shared';
 import { CanvasChartCursorState } from './canvas-chart-cursor-state';
 import { CanvasChartData } from './canvas-chart-data';
 

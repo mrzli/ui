@@ -8,7 +8,7 @@ import {
   LIST_OF_TIME_TICK_INTERVAL_DAY_VALUES,
   LIST_OF_TIME_TICK_INTERVAL_MONTH_VALUES,
 } from '../../../types';
-import { Interval } from '../../../../../types';
+import { Interval } from '@gmjs/trading-chart-shared';
 import {
   compareTimeTickIntervalTimeUnit,
   maxTimeTickInterval,

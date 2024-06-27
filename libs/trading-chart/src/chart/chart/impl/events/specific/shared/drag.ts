@@ -2,7 +2,7 @@ import {
   multiplyPriceSpan,
   multiplySeriesPosition,
 } from '../../../../../helpers';
-import { Point } from '../../../../../types';
+import { Point } from '@gmjs/trading-chart-shared';
 import {
   CanvasChartInput,
   CanvasChartOptions,

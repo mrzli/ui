@@ -1,5 +1,5 @@
 import { expect, describe, it } from '@jest/globals';
-import { Ohlc } from '../../../types';
+import { Ohlc } from '@gmjs/trading-chart-shared';
 import { getTimeAxisTickValueData } from './tick-values';
 import { range } from '@gmjs/array-create';
 import { TimeAxisInput, TimeAxisTickValueData } from '../types';

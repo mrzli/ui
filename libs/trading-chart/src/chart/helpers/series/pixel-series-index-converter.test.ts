@@ -1,5 +1,5 @@
 import { describe, it, expect } from '@jest/globals';
-import { SeriesPosition } from '../../types';
+import { SeriesPosition } from '@gmjs/trading-chart-shared';
 import {
   pixelToSeriesIndexFractional,
   seriesIndexFractionalToPixel,

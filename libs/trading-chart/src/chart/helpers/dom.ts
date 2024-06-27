@@ -1,4 +1,4 @@
-import { Point } from '../types';
+import { Point } from '@gmjs/trading-chart-shared';
 
 export const LIST_OF_CANVAS_TEXT_BASELINES: readonly CanvasTextBaseline[] = [
   'alphabetic',

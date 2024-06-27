@@ -1,5 +1,5 @@
 import { DateObjectTz } from '@gmjs/date-util';
-import { Interval } from '../../../../types';
+import { Interval } from '@gmjs/trading-chart-shared';
 import { TimeTickInterval } from '../../types';
 import { getTimeAxisProcessingIntervals } from './processing-intervals';
 import { getTimeAxisProcessingIntervalRangeInternal } from './processing-intervals/interval-range-helpers';

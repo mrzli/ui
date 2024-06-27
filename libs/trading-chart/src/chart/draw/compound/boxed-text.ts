@@ -1,4 +1,4 @@
-import { Margin } from '../../types';
+import { Margin } from '@gmjs/trading-chart-shared';
 import { RectParameters, drawRect } from '../shape';
 import { TextParameters, drawText, setTextStyle } from '../text';
 import { ShapeDrawType } from '../types';

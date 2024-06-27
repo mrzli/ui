@@ -1,5 +1,5 @@
 import { ChartAreas, isPointInRect } from '../../../../../helpers';
-import { Point, Rect } from '../../../../../types';
+import { Point, Rect } from '@gmjs/trading-chart-shared';
 import { EventArea } from '../types';
 
 export function getEventArea(pos: Point, areas: ChartAreas): EventArea {

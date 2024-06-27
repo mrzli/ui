@@ -1,4 +1,4 @@
-import { Interval, Ohlc, SeriesPosition } from '../../../types';
+import { Interval, Ohlc, SeriesPosition } from '@gmjs/trading-chart-shared';
 
 export interface TimeAxisInput {
   readonly minTickDistance: number;

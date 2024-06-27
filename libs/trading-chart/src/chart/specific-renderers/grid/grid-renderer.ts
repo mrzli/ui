@@ -1,6 +1,6 @@
 import { CanvasRenderer, createCanvasRenderer } from '../../canvas-renderer';
 import { LineGridParameters, drawLineGrid } from '../../draw';
-import { Rect } from '../../types';
+import { Rect } from '@gmjs/trading-chart-shared';
 
 export interface GridData {
   readonly xOffsets: readonly number[];

@@ -2,7 +2,7 @@ import {
   pixelDiffToItemSpanDiff,
   pixelDiffToPriceDiff,
 } from '../../../../../helpers';
-import { Point } from '../../../../../types';
+import { Point } from '@gmjs/trading-chart-shared';
 import { CanvasChartState } from '../../../../types';
 
 export interface PriceAndItemSpanDiff {

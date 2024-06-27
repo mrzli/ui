@@ -1,6 +1,6 @@
 import { CanvasRenderer, createCanvasRenderer } from '../../canvas-renderer';
 import { CandleSeriesData, drawCandleSeries } from '../../draw/series';
-import { Rect } from '../../types';
+import { Rect } from '@gmjs/trading-chart-shared';
 
 export function createCandleSeriesRenderer(
   area: Rect,

@@ -1,4 +1,4 @@
-import { Point, Rect } from '../types';
+import { Point, Rect } from '@gmjs/trading-chart-shared';
 
 export function isPointInRect(point: Point, rect: Rect): boolean {
   return (

@@ -1,4 +1,4 @@
-import { Size } from '../types';
+import { Size } from '@gmjs/trading-chart-shared';
 import {
   createCanvasChartEventHandlers,
   destroyCanvasChart,

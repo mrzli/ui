@@ -5,7 +5,7 @@ import {
   getNumIntegerDigits,
   measureText,
 } from '../../helpers';
-import { Range, Size } from '../../types';
+import { Range, Size } from '@gmjs/trading-chart-shared';
 
 const SIZE_BUFFER = 10;
 

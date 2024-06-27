@@ -1,5 +1,5 @@
 import { getDefaultChartAreas } from '../../helpers';
-import { Size } from '../../types';
+import { Size } from '@gmjs/trading-chart-shared';
 import { CanvasChartState } from '../types';
 
 export function getInitialCanvasChartState(): CanvasChartState {

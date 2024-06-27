@@ -1,4 +1,4 @@
-import { Range } from '../../../types';
+import { Range } from '@gmjs/trading-chart-shared';
 
 export interface PriceAxisInput {
   readonly minTickDistance: number;

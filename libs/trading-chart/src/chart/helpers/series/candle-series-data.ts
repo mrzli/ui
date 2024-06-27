@@ -1,5 +1,5 @@
 import { CandleSeriesData, CandleSeriesItem } from '../../draw';
-import { Ohlc, Range, SeriesPosition } from '../../types';
+import { Ohlc, Range, SeriesPosition } from '@gmjs/trading-chart-shared';
 import { getFirstVisibleIndex, getLastVisibleIndex } from './visible-index';
 
 export function getOhlcSeriesValues(

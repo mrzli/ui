@@ -1,4 +1,4 @@
-import { Rect, Size } from '../../types';
+import { Rect, Size } from '@gmjs/trading-chart-shared';
 
 export interface ChartAreas {
   readonly full: Rect;

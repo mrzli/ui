@@ -1,4 +1,4 @@
-import { Point } from '../../../types';
+import { Point } from '@gmjs/trading-chart-shared';
 
 export interface CanvasChartCursorState {
   readonly pixelPosition: Point;

@@ -1,4 +1,4 @@
-import { Point, Range, SeriesPosition } from '../../../../../../types';
+import { Point, Range, SeriesPosition } from '@gmjs/trading-chart-shared';
 
 export const LIST_OF_EVENT_MOUSE_DRAG_STATE_KINDS = [
   'none',

@@ -232,40 +232,6 @@ describe('time-tick-position-first', () => {
         expected: '2020-01-02T00:00:00Z',
       },
       {
-        description: 'D 2 (1)',
-        input: {
-          item: createItem('2020-01-01T01:00:00Z', 'UTC'),
-          interval: { unit: 'D', value: 2 },
-        },
-        expected: '2020-01-03T00:00:00Z',
-      },
-      {
-        // if date is closer to the end of the month than the interval, that date is skipped
-        description: 'D 2 (2) - end of month',
-        input: {
-          item: createItem('2020-01-29T01:00:00Z', 'UTC'),
-          interval: { unit: 'D', value: 2 },
-        },
-        expected: '2020-02-01T00:00:00Z',
-      },
-      {
-        description: 'D 3 (1)',
-        input: {
-          item: createItem('2020-01-01T01:00:00Z', 'UTC'),
-          interval: { unit: 'D', value: 3 },
-        },
-        expected: '2020-01-04T00:00:00Z',
-      },
-      {
-        // if date is closer to the end of the month than the interval, that date is skipped
-        description: 'D 3 (2) - end of month',
-        input: {
-          item: createItem('2020-01-29T00:00:00Z', 'UTC'),
-          interval: { unit: 'D', value: 3 },
-        },
-        expected: '2020-02-01T00:00:00Z',
-      },
-      {
         description: 'D 7 (1)',
         input: {
           item: createItem('2020-01-01T01:00:00Z', 'UTC'),

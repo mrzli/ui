@@ -18,7 +18,12 @@ import {
   priceToPixel,
   seriesIndexFractionalToPixel,
 } from '../../helpers';
-import { Interval, Range, Rect, SeriesPosition } from '../../types';
+import {
+  Interval,
+  Range,
+  Rect,
+  SeriesPosition,
+} from '@gmjs/trading-chart-shared';
 import { filterOutNullish } from '@gmjs/array-transformers';
 
 export interface CursorRendererData {
