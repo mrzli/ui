@@ -4,7 +4,7 @@ import {
   MIN_X_AXIS_TICK_DISTANCE,
   MIN_Y_AXIS_TICK_DISTANCE,
   createCanvasChart,
-} from '../../../chart';
+} from '@gmjs/trading-chart';
 import { getChartData } from './built-in-chart-data';
 // import { getChartData } from './server-chart-data';
 // import { getChartData } from './server-chart-data-databento';

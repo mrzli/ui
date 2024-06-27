@@ -12,7 +12,7 @@ import {
   LIST_OF_FONT_FAMILIES,
   TextParameters,
   drawText,
-} from '../../../chart';
+} from '@gmjs/trading-chart';
 
 const STORY_META: Meta<TextParameters> = {
   title: 'Canvas/Text',

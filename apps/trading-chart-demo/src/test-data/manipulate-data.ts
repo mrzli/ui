@@ -1,5 +1,5 @@
 import { randomInteger } from '@gmjs/number-util';
-import { CanvasChartData } from '../../chart';
+import { CanvasChartData } from '@gmjs/trading-chart';
 import { getChartData } from '../local/src/built-in-chart-data';
 
 export async function manipulateData(): Promise<void> {

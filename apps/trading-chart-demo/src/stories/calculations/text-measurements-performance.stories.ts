@@ -1,15 +1,16 @@
 import type { Meta, StoryObj } from '@storybook/html';
 import { decoratorPadding } from '../../storybook-utils';
 import {
+  FontFamily,
   TextParametersStyle,
   measurePeformanceTime,
   measureText,
   measureTextCurrentStyle,
-} from '../../../chart';
+} from '@gmjs/trading-chart';
 
 interface Props {
   readonly fontSize: number;
-  readonly fontFamily: string;
+  readonly fontFamily: FontFamily;
   readonly text: string;
   readonly iterations: number;
 }
@@ -47,7 +48,8 @@ export const Measure: StoryObj<Props> = {
       },
       (c) => {
         const style: TextParametersStyle = {
-          font: `${args.fontSize}px ${args.fontFamily}`,
+          fontFamily: args.fontFamily,
+          fontSize: args.fontSize,
         };
         for (let i = 0; i < args.iterations; i++) {
           measureText(c, style, args.text);

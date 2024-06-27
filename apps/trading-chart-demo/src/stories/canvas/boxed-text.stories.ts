@@ -12,7 +12,7 @@ import {
   LIST_OF_FONT_FAMILIES,
   LIST_OF_SHAPE_DRAW_TYPES,
   drawBoxedText,
-} from '../../../chart';
+} from '@gmjs/trading-chart';
 
 const STORY_META: Meta<BoxedTextParameters> = {
   title: 'Canvas/Boxed Text',

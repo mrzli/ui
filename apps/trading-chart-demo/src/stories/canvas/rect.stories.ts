@@ -8,7 +8,7 @@ import {
   LIST_OF_SHAPE_DRAW_TYPES,
   RectParameters,
   drawRect,
-} from '../../../chart';
+} from '@gmjs/trading-chart';
 
 const STORY_META: Meta<RectParameters> = {
   title: 'Canvas/Rect',

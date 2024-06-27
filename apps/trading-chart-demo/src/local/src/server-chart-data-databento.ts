@@ -1,10 +1,11 @@
-import { isoDateTimeToUnixSeconds } from '@gmjs/date-util';
-import { CanvasChartData, Interval, Ohlc } from '../../../chart';
+import { CanvasChartData, Interval, Ohlc } from '@gmjs/trading-chart';
 import { parseFloatOrThrow, parseIntegerOrThrow } from '@gmjs/number-util';
 
 export async function getChartData(): Promise<CanvasChartData> {
-  const input: GetServerDataInput = { symbol: 'AAPL', interval: '1min' };
+  const input: GetServerDataInput = { symbol: 'ES', interval: '1min' };
   const serverData = await getServerData(input);
+
+  console.log(serverData);
 
   const dataItems: readonly Ohlc[] = serverData.data.map((line) =>
     lineToOhlc(line),
@@ -23,7 +24,7 @@ async function getServerData(input: GetServerDataInput): Promise<ResponseData> {
   const { symbol, interval } = input;
 
   const response = await fetch(
-    `http://localhost:3000/api/ticker-data?symbol=${symbol}&interval=${interval}`,
+    `http://localhost:3000/api/ticker-data-databento?symbol=${symbol}&interval=${interval}`,
   );
   const data = await response.json();
 
@@ -37,9 +38,9 @@ interface ResponseData {
 }
 
 function lineToOhlc(line: string): Ohlc {
-  const [timestamp, open, high, low, close, volume] = line.split(',');
+  const [timestamp, _date, open, high, low, close, volume] = line.split(',');
 
-  const time = isoDateTimeToUnixSeconds(timestamp);
+  const time = parseIntegerOrThrow(timestamp);
 
   return {
     time,

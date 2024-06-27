@@ -1,5 +1,5 @@
 import { Duration, unixSecondsAdd } from '@gmjs/date-util';
-import { Interval, Ohlc } from '../../chart';
+import { Interval, Ohlc } from '@gmjs/trading-chart';
 
 export function convertRawOhlcDataToInterval(
   data: readonly Omit<Ohlc, 'time'>[],
