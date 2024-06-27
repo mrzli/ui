@@ -1,4 +1,4 @@
-import { expect, describe, it } from 'vitest';
+import { expect, describe, it } from '@jest/globals';
 import { Ohlc } from '../../../types';
 import { getTimeAxisTickValueData } from './tick-values';
 import { range } from '@gmjs/array-create';

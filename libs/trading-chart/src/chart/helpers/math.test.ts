@@ -1,4 +1,4 @@
-import { expect, describe, it } from 'vitest';
+import { expect, describe, it } from '@jest/globals';
 import { getMultipleGt, getMultipleGte, getNumIntegerDigits } from './math';
 
 describe('math', () => {

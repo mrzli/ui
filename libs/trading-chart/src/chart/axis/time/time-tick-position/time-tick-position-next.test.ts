@@ -1,4 +1,4 @@
-import { describe, it, expect } from 'vitest';
+import { describe, it, expect } from '@jest/globals';
 import { TimeTickInterval } from '../types';
 import { isoDateTimeToUnixSeconds } from '@gmjs/date-util';
 import { getTimeTickPositionNext } from './time-tick-position-next';

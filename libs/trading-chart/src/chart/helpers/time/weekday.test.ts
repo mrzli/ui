@@ -1,5 +1,5 @@
 import { DateObjectTz } from '@gmjs/date-util';
-import { describe, it, expect } from 'vitest';
+import { describe, it, expect } from '@jest/globals';
 import { dateObjectToWeekday } from './weekday';
 
 describe('weekday', () => {
