@@ -5,8 +5,9 @@ import {
   LIST_OF_TIME_TICK_INTERVAL_MONTH_VALUES,
   LIST_OF_TIME_TICK_INTERVAL_TIME_UNITS,
   TimeTickIntervalValue,
-} from './../../../types';
-import { TimeTickInterval, TimeTickIntervalTimeUnit } from '../../../types';
+  TimeTickInterval,
+  TimeTickIntervalTimeUnit,
+} from '../../../types';
 import { compareTimeTickIntervalTimeUnit } from '../../../util';
 import { ensureNever, invariant } from '@gmjs/assert';
 

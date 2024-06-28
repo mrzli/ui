@@ -1,6 +1,6 @@
 import { describe, expect, it } from '@jest/globals';
 import { TimeTickInterval } from '../../../types';
-import { getTimeAxisProcessingIntervals } from '.';
+import { getTimeAxisProcessingIntervals } from './processing-intervals';
 
 describe('processing-intervals', () => {
   describe('getTimeAxisProcessingIntervals()', () => {

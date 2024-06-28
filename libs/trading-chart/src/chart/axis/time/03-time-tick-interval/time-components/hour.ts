@@ -1,6 +1,8 @@
-import { LIST_OF_TIME_TICK_INTERVAL_HOUR_VALUES } from './../../types/time-tick-interval';
 import { getNextHigherValue } from '../shared';
-import { TimeTickInterval } from '../../types';
+import {
+  LIST_OF_TIME_TICK_INTERVAL_HOUR_VALUES,
+  TimeTickInterval,
+} from '../../types';
 import { getNextHigherIntervalFromDays } from './day';
 
 export function getNextHigherIntervalFromHours(
