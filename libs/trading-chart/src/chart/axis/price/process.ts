@@ -3,8 +3,7 @@ import { map, toArray } from '@gmjs/value-transformers';
 import { TickValue } from '../types';
 import { formatPrice } from './formatting';
 import { getPriceAxisTickValues } from './tick-values';
-import { PriceAxisInput } from './types';
-import { PriceAxisOutputItem } from './types/price-axis-output-item';
+import { PriceAxisInput, PriceAxisOutputItem } from './types';
 
 export function processPriceAxisData(
   input: PriceAxisInput,
