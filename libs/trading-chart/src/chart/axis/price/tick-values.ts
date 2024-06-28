@@ -1,7 +1,7 @@
 import { round } from '@gmjs/number-util';
 import { getSignificantDigitIndex } from '../../helpers';
 import { PriceAxisInput } from './types';
-import { TickValue } from '../types';
+import { TickValue } from '@gmjs/trading-chart-shared';
 
 const MAX_PRECISION = 10;
 

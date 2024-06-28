@@ -1,6 +1,6 @@
 import { applyFn } from '@gmjs/apply-function';
 import { map, toArray } from '@gmjs/value-transformers';
-import { TickValue } from '../types';
+import { TickValue } from '@gmjs/trading-chart-shared';
 import { formatPrice } from './formatting';
 import { getPriceAxisTickValues } from './tick-values';
 import { PriceAxisInput, PriceAxisOutputItem } from './types';

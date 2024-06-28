@@ -1,4 +1,4 @@
-import { TickValue } from '../../types';
+import { TickValue } from '@gmjs/trading-chart-shared';
 import { TimeAxisInput, TimeAxisTickValueData } from '../types';
 
 export function getTimeAxisTickValueData(
