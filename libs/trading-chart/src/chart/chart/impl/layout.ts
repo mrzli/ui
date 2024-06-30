@@ -1,11 +1,6 @@
 import { TextParametersStyle } from '../../draw';
-import {
-  ChartAreas,
-  getChartAreas,
-  getNumIntegerDigits,
-  measureText,
-} from '../../helpers';
-import { Range, Size } from '@gmjs/trading-chart-shared';
+import { ChartAreas, getChartAreas, measureText } from '../../helpers';
+import { Range, Size, getNumIntegerDigits } from '@gmjs/trading-chart-shared';
 
 const SIZE_BUFFER = 10;
 

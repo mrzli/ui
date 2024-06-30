@@ -32,7 +32,7 @@ importers:
         version: 1.5.0(react@18.3.1)
       '@gmjs/eslint-config':
         specifier: ^0.0.36
-        version: 0.0.36(@typescript-eslint/parser@7.14.1(eslint@9.5.0)(typescript@5.5.2))(prettier@3.3.2)(typescript@5.5.2)
+        version: 0.0.36(prettier@3.3.2)(typescript@5.5.2)
       '@gmjs/pnpm-publish-cli':
         specifier: ^0.0.2
         version: 0.0.2
@@ -126,6 +126,9 @@ importers:
       '@gmjs/trading-chart':
         specifier: workspace:^
         version: 'link:'
+      '@gmjs/trading-chart-price-axis':
+        specifier: workspace:^
+        version: link:../trading-chart-price-axis
       '@gmjs/trading-chart-shared':
         specifier: workspace:^
         version: link:../trading-chart-shared
@@ -141,7 +144,7 @@ importers:
     devDependencies:
       '@gmjs/eslint-config':
         specifier: ^0.0.38
-        version: 0.0.38(prettier@3.3.2)(typescript@5.5.2)
+        version: 0.0.38(@typescript-eslint/parser@7.14.1(eslint@9.5.0)(typescript@5.5.2))(prettier@3.3.2)(typescript@5.5.2)
       '@gmjs/pnpm-publish-cli':
         specifier: ^0.0.2
         version: 0.0.2
@@ -175,6 +178,18 @@ importers:
 
   libs/trading-chart-price-axis:
     dependencies:
+      '@gmjs/apply-function':
+        specifier: ^0.0.3
+        version: 0.0.3
+      '@gmjs/number-util':
+        specifier: ^0.0.3
+        version: 0.0.3
+      '@gmjs/trading-chart-shared':
+        specifier: workspace:^
+        version: link:../trading-chart-shared
+      '@gmjs/value-transformers':
+        specifier: ^0.0.15
+        version: 0.0.15
       tslib:
         specifier: ^2.6.3
         version: 2.6.3
@@ -6824,7 +6839,34 @@ snapshots:
       luxon: 3.4.4
       tslib: 2.6.3
 
-  '@gmjs/eslint-config@0.0.36(@typescript-eslint/parser@7.14.1(eslint@9.5.0)(typescript@5.5.2))(prettier@3.3.2)(typescript@5.5.2)':
+  '@gmjs/eslint-config@0.0.36(prettier@3.3.2)(typescript@5.5.2)':
+    dependencies:
+      '@eslint/js': 9.5.0
+      eslint: 9.5.0
+      eslint-config-prettier: 9.1.0(eslint@9.5.0)
+      eslint-import-resolver-typescript: 3.6.1(eslint-plugin-import@2.29.1(eslint@9.5.0))(eslint@9.5.0)
+      eslint-plugin-import: 2.29.1(eslint-import-resolver-typescript@3.6.1(eslint-plugin-import@2.29.1(eslint@9.5.0))(eslint@9.5.0))(eslint@9.5.0)
+      eslint-plugin-jsx-a11y: 6.9.0(eslint@9.5.0)
+      eslint-plugin-n: 17.9.0(eslint@9.5.0)
+      eslint-plugin-prettier: 5.1.3(eslint-config-prettier@9.1.0(eslint@9.5.0))(eslint@9.5.0)(prettier@3.3.2)
+      eslint-plugin-react: 7.34.3(eslint@9.5.0)
+      eslint-plugin-react-hooks: 4.6.2(eslint@9.5.0)
+      eslint-plugin-react-refresh: 0.4.7(eslint@9.5.0)
+      eslint-plugin-storybook: 0.8.0(eslint@9.5.0)(typescript@5.5.2)
+      eslint-plugin-unicorn: 52.0.0(eslint@9.5.0)
+      globals: 15.6.0
+      tslib: 2.6.3
+      typescript-eslint: 7.14.1(eslint@9.5.0)(typescript@5.5.2)
+    transitivePeerDependencies:
+      - '@types/eslint'
+      - '@typescript-eslint/parser'
+      - eslint-import-resolver-node
+      - eslint-import-resolver-webpack
+      - prettier
+      - supports-color
+      - typescript
+
+  '@gmjs/eslint-config@0.0.38(@typescript-eslint/parser@7.14.1(eslint@9.5.0)(typescript@5.5.2))(prettier@3.3.2)(typescript@5.5.2)':
     dependencies:
       '@eslint/js': 9.5.0
       eslint: 9.5.0
@@ -6856,8 +6898,8 @@ snapshots:
       '@eslint/js': 9.5.0
       eslint: 9.5.0
       eslint-config-prettier: 9.1.0(eslint@9.5.0)
-      eslint-import-resolver-typescript: 3.6.1(eslint-plugin-import@2.29.1(eslint@9.5.0))(eslint@9.5.0)
-      eslint-plugin-import: 2.29.1(eslint-import-resolver-typescript@3.6.1(eslint-plugin-import@2.29.1(eslint@9.5.0))(eslint@9.5.0))(eslint@9.5.0)
+      eslint-import-resolver-typescript: 3.6.1(eslint-plugin-import@2.29.1)(eslint@9.5.0)
+      eslint-plugin-import: 2.29.1(eslint-import-resolver-typescript@3.6.1)(eslint@9.5.0)
       eslint-plugin-jsx-a11y: 6.9.0(eslint@9.5.0)
       eslint-plugin-n: 17.9.0(eslint@9.5.0)
       eslint-plugin-prettier: 5.1.3(eslint-config-prettier@9.1.0(eslint@9.5.0))(eslint@9.5.0)(prettier@3.3.2)
@@ -9391,6 +9433,23 @@ snapshots:
       - eslint-import-resolver-webpack
       - supports-color
 
+  eslint-import-resolver-typescript@3.6.1(eslint-plugin-import@2.29.1)(eslint@9.5.0):
+    dependencies:
+      debug: 4.3.5
+      enhanced-resolve: 5.17.0
+      eslint: 9.5.0
+      eslint-module-utils: 2.8.1(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.1(eslint-plugin-import@2.29.1)(eslint@9.5.0))(eslint@9.5.0)
+      eslint-plugin-import: 2.29.1(eslint-import-resolver-typescript@3.6.1)(eslint@9.5.0)
+      fast-glob: 3.3.2
+      get-tsconfig: 4.7.5
+      is-core-module: 2.14.0
+      is-glob: 4.0.3
+    transitivePeerDependencies:
+      - '@typescript-eslint/parser'
+      - eslint-import-resolver-node
+      - eslint-import-resolver-webpack
+      - supports-color
+
   eslint-module-utils@2.8.1(@typescript-eslint/parser@7.14.1(eslint@9.5.0)(typescript@5.5.2))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.1(@typescript-eslint/parser@7.14.1(eslint@9.5.0)(typescript@5.5.2))(eslint-plugin-import@2.29.1(@typescript-eslint/parser@7.14.1(eslint@9.5.0)(typescript@5.5.2))(eslint@9.5.0))(eslint@9.5.0))(eslint@9.5.0):
     dependencies:
       debug: 3.2.7
@@ -9409,6 +9468,16 @@ snapshots:
       eslint: 9.5.0
       eslint-import-resolver-node: 0.3.9
       eslint-import-resolver-typescript: 3.6.1(eslint-plugin-import@2.29.1(eslint@9.5.0))(eslint@9.5.0)
+    transitivePeerDependencies:
+      - supports-color
+
+  eslint-module-utils@2.8.1(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.1(eslint-plugin-import@2.29.1)(eslint@9.5.0))(eslint@9.5.0):
+    dependencies:
+      debug: 3.2.7
+    optionalDependencies:
+      eslint: 9.5.0
+      eslint-import-resolver-node: 0.3.9
+      eslint-import-resolver-typescript: 3.6.1(eslint-plugin-import@2.29.1)(eslint@9.5.0)
     transitivePeerDependencies:
       - supports-color
 
@@ -9457,6 +9526,31 @@ snapshots:
       eslint: 9.5.0
       eslint-import-resolver-node: 0.3.9
       eslint-module-utils: 2.8.1(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.1(eslint-plugin-import@2.29.1(eslint@9.5.0))(eslint@9.5.0))(eslint@9.5.0)
+      hasown: 2.0.2
+      is-core-module: 2.14.0
+      is-glob: 4.0.3
+      minimatch: 3.1.2
+      object.fromentries: 2.0.8
+      object.groupby: 1.0.3
+      object.values: 1.2.0
+      semver: 6.3.1
+      tsconfig-paths: 3.15.0
+    transitivePeerDependencies:
+      - eslint-import-resolver-typescript
+      - eslint-import-resolver-webpack
+      - supports-color
+
+  eslint-plugin-import@2.29.1(eslint-import-resolver-typescript@3.6.1)(eslint@9.5.0):
+    dependencies:
+      array-includes: 3.1.8
+      array.prototype.findlastindex: 1.2.5
+      array.prototype.flat: 1.3.2
+      array.prototype.flatmap: 1.3.2
+      debug: 3.2.7
+      doctrine: 2.1.0
+      eslint: 9.5.0
+      eslint-import-resolver-node: 0.3.9
+      eslint-module-utils: 2.8.1(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.1(eslint-plugin-import@2.29.1)(eslint@9.5.0))(eslint@9.5.0)
       hasown: 2.0.2
       is-core-module: 2.14.0
       is-glob: 4.0.3

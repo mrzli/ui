@@ -1,4 +1,4 @@
-import { getMultipleGte } from '../../../../helpers';
+import { getMultipleGte } from '@gmjs/trading-chart-shared';
 import {
   TimeAxisExtendedDataItem,
   TimeAxisProcessInput,

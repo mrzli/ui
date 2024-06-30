@@ -1,6 +1,6 @@
 import { expect, describe, it } from '@jest/globals';
-import { getPriceAxisTickValues } from './tick-values';
 import { TickValue } from '@gmjs/trading-chart-shared';
+import { getPriceAxisTickValues } from './tick-values';
 import { PriceAxisInput } from './types';
 
 describe('tick-values', () => {

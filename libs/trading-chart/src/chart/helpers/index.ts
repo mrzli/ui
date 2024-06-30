@@ -7,6 +7,5 @@ export * from './converters';
 export * from './date';
 export * from './dom';
 export * from './geometry';
-export * from './math';
 export * from './performance';
 export * from './render';

@@ -1,7 +1,7 @@
 import { invariant } from '@gmjs/assert';
-import { getOrderOfMagnitude } from '../../../../../../helpers';
 import { TimeTickInterval } from '../../../../types';
 import { clampToSingleTimeUnit } from '../shared';
+import { getOrderOfMagnitude } from '@gmjs/trading-chart-shared';
 
 export function getTimeAxisProcessingIntervalsYear(
   from: TimeTickInterval,

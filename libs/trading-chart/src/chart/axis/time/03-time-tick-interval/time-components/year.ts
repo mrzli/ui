@@ -1,6 +1,6 @@
 import { getNextHigherValueWithOrderOfMagnitude } from '../shared';
 import { TimeTickInterval } from '../../types';
-import { getOrderOfMagnitude } from '../../../../helpers';
+import { getOrderOfMagnitude } from '@gmjs/trading-chart-shared';
 
 export function getNextHigherIntervalFromYears(
   input: number,

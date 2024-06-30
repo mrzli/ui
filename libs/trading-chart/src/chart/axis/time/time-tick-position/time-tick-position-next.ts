@@ -1,12 +1,13 @@
 import { ensureNever } from '@gmjs/assert';
 import { TimeTickInterval } from '../types';
-import { getDaysInMonth, getMultipleGt } from '../../../helpers';
+import { getDaysInMonth } from '../../../helpers';
 import {
   DateObjectTz,
   dateObjectTzAdd,
   dateObjectTzToUnixSeconds,
   unixSecondsToDateObjectTz,
 } from '@gmjs/date-util';
+import { getMultipleGt } from '@gmjs/trading-chart-shared';
 
 export function getTimeTickPositionNext(
   time: number,

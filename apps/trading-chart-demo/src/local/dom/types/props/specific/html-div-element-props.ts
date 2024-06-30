@@ -1,4 +1,3 @@
 import { HTMLElementProps } from '../base';
 
-export interface HTMLDivElementProps extends HTMLElementProps {
-}
+export interface HTMLDivElementProps extends HTMLElementProps {}
