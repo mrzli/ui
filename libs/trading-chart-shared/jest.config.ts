@@ -8,5 +8,6 @@ export default async (): Promise<JestConfigWithTsJest> => {
     transform: {
       '^.+\\.tsx?$': ['ts-jest', { tsconfig: 'tsconfig.test.json' }],
     },
+    resolver: '<rootDir>/../../jest-resolver.js',
   };
 };
