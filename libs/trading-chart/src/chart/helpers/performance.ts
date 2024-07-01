@@ -1,5 +1,3 @@
-import { performance } from 'node:perf_hooks';
-
 export async function asyncMeasurePeformanceTime(
   fn: () => Promise<void>,
 ): Promise<number> {
