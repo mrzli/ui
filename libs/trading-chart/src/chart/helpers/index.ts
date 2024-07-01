@@ -4,7 +4,6 @@ export * from './series';
 export * from './time';
 export * from './constants';
 export * from './converters';
-export * from './date';
 export * from './dom';
 export * from './geometry';
 export * from './performance';
