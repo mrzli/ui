@@ -24,9 +24,9 @@
     "clean": "shx rm -rf ./dist",
     "build": "pnpm run clean && tsc --project tsconfig.lib.json",
     "build+": "pnpm run test+ && pnpm run build",
-    "pac": "npmpub pack -c project.json",
+    "pac": "pnpmpub pack -c project.json",
     "pac+": "pnpm run build+ && pnpm run pac",
-    "pub": "npmpub pub -c project.json",
+    "pub": "pnpmpub pub -c project.json",
     "pub+": "pnpm run pac+ && pnpm run pub"
   },
   "dependencies": {
