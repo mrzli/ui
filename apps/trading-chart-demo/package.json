@@ -38,6 +38,7 @@
     "@gmjs/date-util": "^0.0.9",
     "@gmjs/number-util": "^0.0.3",
     "@gmjs/trading-chart": "workspace:^",
+    "@gmjs/trading-chart-shared": "workspace:^",
     "luxon": "^3.4.4"
   },
   "devDependencies": {

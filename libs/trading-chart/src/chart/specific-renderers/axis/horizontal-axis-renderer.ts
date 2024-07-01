@@ -1,4 +1,4 @@
-import { TimeAxisOutputItem } from '../../axis';
+import { TimeAxisOutputItem } from '@gmjs/trading-chart-time-axis';
 import { CanvasRenderer, createCanvasRenderer } from '../../canvas-renderer';
 import { TextParameters, drawText } from '../../draw';
 import { Rect } from '@gmjs/trading-chart-shared';

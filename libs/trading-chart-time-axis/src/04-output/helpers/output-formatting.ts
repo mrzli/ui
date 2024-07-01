@@ -4,7 +4,7 @@ import {
   formatAsMonth,
   formatAsDay,
   formatAsHourMinute,
-} from '../../../../helpers';
+} from '@gmjs/trading-chart-shared';
 import { TimeAxisExtendedDataItem, TimeAxisOutputItem } from '../../types';
 import { TimeDisplayType } from '../types';
 

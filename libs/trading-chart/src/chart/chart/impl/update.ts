@@ -1,5 +1,4 @@
 import { createCursorRenderer } from './../../specific-renderers/cursor/cursor-renderer';
-import { processTimeAxisData } from '../../axis';
 import {
   CanvasRenderer,
   CanvasRenderingPipelineOptions,
@@ -20,12 +19,15 @@ import {
   CanvasChartOptions,
   CanvasChartStateWrapper,
 } from '../types';
-import { TimeAxisInput } from '../../axis/time/types/time-axis-input';
 import { processState, updateStateLayout } from './internal';
 import {
   PriceAxisInput,
   processPriceAxisData,
 } from '@gmjs/trading-chart-price-axis';
+import {
+  TimeAxisInput,
+  processTimeAxisData,
+} from '@gmjs/trading-chart-time-axis';
 
 export function updateCanvasChart(
   input: CanvasChartInput,

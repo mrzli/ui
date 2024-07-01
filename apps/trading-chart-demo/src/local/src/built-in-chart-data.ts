@@ -1,5 +1,6 @@
+import { Interval } from '@gmjs/trading-chart-shared';
 import { isoDateTimeToUnixSeconds } from '@gmjs/date-util';
-import { CanvasChartData, Interval } from '@gmjs/trading-chart';
+import { CanvasChartData } from '@gmjs/trading-chart';
 import {
   convertRawOhlcDataToInterval,
   TEST_RAW_OHLC_DATA,

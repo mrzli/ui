@@ -1,5 +1,6 @@
-import { CanvasChartData, Interval, Ohlc } from '@gmjs/trading-chart';
+import { CanvasChartData } from '@gmjs/trading-chart';
 import { parseFloatOrThrow, parseIntegerOrThrow } from '@gmjs/number-util';
+import { Ohlc, Interval } from '@gmjs/trading-chart-shared';
 
 export async function getChartData(): Promise<CanvasChartData> {
   const input: GetServerDataInput = { symbol: 'ES', interval: '1min' };

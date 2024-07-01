@@ -1,4 +1,4 @@
-import { PriceAxisOutputItem } from '../../axis/price/types/price-axis-output-item';
+import { PriceAxisOutputItem } from '@gmjs/trading-chart-price-axis';
 import { CanvasRenderer, createCanvasRenderer } from '../../canvas-renderer';
 import { TextParameters, drawText } from '../../draw';
 import { Rect } from '@gmjs/trading-chart-shared';

@@ -41,6 +41,7 @@
     "@gmjs/trading-chart": "workspace:^",
     "@gmjs/trading-chart-price-axis": "workspace:^",
     "@gmjs/trading-chart-shared": "workspace:^",
+    "@gmjs/trading-chart-time-axis": "workspace:^",
     "@gmjs/value-transformers": "^0.0.15",
     "luxon": "^3.4.4",
     "tslib": "^2.6.3"

@@ -1,5 +1,5 @@
 /* eslint-disable unicorn/numeric-separators-style */
-import { Ohlc } from '@gmjs/trading-chart';
+import { Ohlc } from '@gmjs/trading-chart-shared';
 
 export const TEST_RAW_OHLC_DATA: readonly Omit<Ohlc, 'time'>[] = [
   {

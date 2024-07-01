@@ -1,13 +1,12 @@
 import { ensureNever } from '@gmjs/assert';
 import { TimeAxisExtendedDataItem, TimeTickInterval } from '../types';
-import { getDaysInMonth } from '../../../helpers';
 import {
   DateObjectTz,
   dateObjectTzAdd,
   dateObjectTzToUnixSeconds,
   unixSecondsToDateObjectTz,
 } from '@gmjs/date-util';
-import { getMultipleGte } from '@gmjs/trading-chart-shared';
+import { getDaysInMonth, getMultipleGte } from '@gmjs/trading-chart-shared';
 
 export function getTimeTickPositionFirst(
   extendedItem: TimeAxisExtendedDataItem,
